@@ -539,6 +539,12 @@ footer {
 /* start responsive design coding */
 
 @media only screen and (max-width: 768px) {
+
+body{
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
   header {
     width: 100%;
     height: 500px;
