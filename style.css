@@ -619,9 +619,16 @@ body{
     margin-top: 450px;
   }
 
-  .intro {
+ .intro {
     width: 100%;
     height: auto;
+    position: relative;
+    z-index: 9999;
+  }
+
+  .translate{
+    position: relative;
+    z-index: 9999;
   }
 
   .skill-sect{
