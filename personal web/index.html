@@ -1,0 +1,748 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keywords"
+      content="Sagar Kumar,Sagar Varma, Sagar Kumar Varma, Sagar Portfolio, Web Developer, Frontend Developer, HTML, CSS, JavaScript, Responsive Website, Portfolio Website, Computer Engineering Student, Website Designer, Web Development, UI Design, Personal Portfolio, Freelance Web Developer"
+    />
+    <meta
+      name="description"
+      content="Sagar Kumar's personal portfolio website showcasing web development projects, skills, education, and contact information."
+    />
+    <meta name="author" content="Sagar Varma" />
+    <title>Sagar Varma | Frontend Web Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="image/g.jpeg" sizes="48x48" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="magic.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!--Script coding-->
+    <script>
+      // alert
+    console.log("👋 Welcome to Sagar Varma's Portfolio!");
+    console.warn("⚠️ Please respect the author's work. Unauthorized copying is not permitted.");
+
+      function anm() {
+        var a = document.getElementById("image");
+        a.className = "image animate__animated animate__bounce";
+  
+      }
+
+      // night / day mode
+
+      function night() {
+        var body = document.getElementById("bdy");
+        body.bgColor = "black";
+
+        var word = document.getElementById("build");
+        word.style.color = "white";
+
+        var word1 = document.getElementById("create");
+        word1.style.color = "white";
+
+        var word2 = document.getElementById("digi");
+        word2.style.color = "white";
+
+        var head = document.getElementById("header");
+        head.style.background = "black";
+
+        document.getElementById("logo").style.color = "white";
+
+        document.getElementById("nav-linkss1").style.color = "#ccc";
+        document.getElementById("nav-linkss2").style.color = "#ccc";
+        /* document.getElementById("nav-linkss3").style.color = "#ccc";
+        document.getElementById("nav-linkss4").style.color = "#ccc"; */
+        document.getElementById("nav-linkss5").style.color = "#ccc";
+
+        // dark mode btn
+
+        document.getElementById("dark").style.background = "#f5f5f5";
+        document.getElementById("day").style.background = "none";
+        document.getElementById("day").style.color = "yellow";
+
+        // intro
+        var intro = document.getElementById("intro-text");
+        intro.style.fontSize = "20px";
+        intro.style.fontFamily = "sans-serif";
+        intro.style.color = "aliceblue";
+
+        var intro1 = document.getElementById("intro");
+        intro1.style.float = "left";
+
+        // contact button
+        document.getElementById("contact-btn");
+
+        // translate button design
+
+        document.getElementById("translate-hin").style.border =
+          "2px solid white";
+        document.getElementById("translate-hin").style.background = "inherit";
+        document.getElementById("translate-hin").style.color = "white";
+
+        document.getElementById("translate-eng").style.border =
+          "2px solid white";
+        document.getElementById("translate-eng").style.background = "inherit";
+        document.getElementById("translate-eng").style.color = "white";
+
+        // skills section code
+
+        document.getElementById("skill-head").style.color = "white";
+
+        // section1
+
+        document.getElementById("section-one").style.backgroundColor = "black";
+
+        // timeline codeing
+
+        document.getElementById("course1").style.color = "white";
+        document.getElementById("course2").style.color = "white";
+        document.getElementById("course3").style.color = "white";
+        document.getElementById("course4").style.color = "white";
+        document.getElementById("course5").style.color = "white";
+        document.getElementById("course6").style.color = "white";
+        document.getElementById("course7").style.color = "white";
+
+        document.getElementById("journey-head").style.color = "white";
+
+        // footer
+
+        document.getElementById("footer").style.backgroundColor = "#323232";
+        document.getElementById("contact-title").style.color = "white";
+        document.getElementById("dev-name").style.color = "white";
+        document.getElementById("developer").style.color = "white";
+
+        document.getElementById("home").style.color = "#a2a5a4";
+        document.getElementById("aboutus").style.color = "#a2a5a4";
+        document.getElementById("skil").style.color = "#a2a5a4";
+        document.getElementById("jrny").style.color = "#a2a5a4";
+        document.getElementById("cont").style.color = "#a2a5a4";
+
+        document.getElementById("follow").style.color = "white";
+      }
+
+      // day function
+
+      function day() {
+        var body = document.getElementById("bdy");
+        body.bgColor = "white";
+
+        var word = document.getElementById("build");
+        word.style.color = "black";
+
+        var word1 = document.getElementById("create");
+        word1.style.color = "black";
+
+        var word2 = document.getElementById("digi");
+        word2.style.color = "black";
+
+        var head = document.getElementById("header");
+        head.style.background = "rgba(248, 247, 247, 0.966)";
+
+        document.getElementById("logo").style.color = "black";
+
+        document.getElementById("nav-linkss1").style.color = "#323232";
+        document.getElementById("nav-linkss2").style.color = "#323232";
+        /* document.getElementById("nav-linkss3").style.color = "#323232";
+        document.getElementById("nav-linkss4").style.color = "#323232"; */
+        document.getElementById("nav-linkss5").style.color = "#323232";
+
+        // day mode btn
+
+        document.getElementById("dark").style.background = "none";
+        document.getElementById("day").style.background = "#f5f5f5";
+        document.getElementById("day").style.color = "black";
+
+        // intro
+        var intro = document.getElementById("intro-text");
+        intro.style.fontSize = "20px";
+        intro.style.fontFamily = "sans-serif";
+        intro.style.color = "#758A93";
+
+        var intro1 = document.getElementById("intro");
+        intro1.style.float = "left";
+
+        // translate button design
+
+        document.getElementById("translate-hin").style.border =
+          "2px solid black";
+        document.getElementById("translate-hin").style.background = "inherit";
+        document.getElementById("translate-hin").style.color = "black";
+
+        document.getElementById("translate-eng").style.border =
+          "2px solid black";
+        document.getElementById("translate-eng").style.background = "inherit";
+        document.getElementById("translate-eng").style.color = "black";
+
+        // skills section code
+
+        document.getElementById("skill-head").style.color = "#121212";
+
+        // section1
+
+        document.getElementById("section-one").style.backgroundColor = "#ccc";
+
+        // timeline codeing
+
+        document.getElementById("course1").style.color = "black";
+        document.getElementById("course2").style.color = "black";
+        document.getElementById("course3").style.color = "black";
+        document.getElementById("course4").style.color = "black";
+        document.getElementById("course5").style.color = "black";
+        document.getElementById("course6").style.color = "black";
+        document.getElementById("course7").style.color = "black";
+
+        document.getElementById("journey-head").style.color = "black";
+
+        // footer
+
+        document.getElementById("footer").style.backgroundColor = "#f3f4f4";
+        document.getElementById("contact-title").style.color = "black";
+        document.getElementById("dev-name").style.color = "rgb(10, 10, 201)";
+        document.getElementById("developer").style.color = "rgb(8, 8, 117)";
+
+        document.getElementById("home").style.color = "#323232";
+        document.getElementById("aboutus").style.color = "#323232";
+        document.getElementById("skil").style.color = "#323232";
+        document.getElementById("jrny").style.color = "#323232";
+        document.getElementById("cont").style.color = "#323232";
+
+        document.getElementById("follow").style.color = "black";
+      }
+
+      // Hindi translate button coding
+
+      function convert() {
+        var chng = document.getElementById("intro-text");
+        chng.innerHTML = `नमस्ते, मैं सागर वर्मा हूँ, एक फ्रंटेंड वेब डेवलपर। मैं गोपीडीह, देवघर, झारखंड से हूँ। मैं HTML, CSS और JavaScript का उपयोग करके सरल, रेस्पॉन्सिव और आकर्षक वेबसाइटें बनाता हूँ।
+
+मुझे नए विचारों को साफ-सुथरे और उपयोगकर्ता-अनुकूल वेब अनुभवों में बदलना पसंद है। मैं व्यक्तिगत पोर्टफोलियो, छोटे व्यवसायों और रचनात्मक परियोजनाओं के लिए वेबसाइटें विकसित करता हूँ।
+
+वर्तमान में, मैं लगातार अभ्यास, सीखने और वास्तविक परियोजनाओं पर काम करके अपने कौशल को बेहतर बना रहा हूँ, ताकि और अधिक प्रभावी, आधुनिक और बेहतर वेबसाइटें बना सकूँ।`;
+      }
+
+      // English translate button coding
+
+      function convert1() {
+        document.getElementById("intro-text").innerHTML =
+          `Hi, I'm Sagar Varma, a Frontend Web Developer from Gopidih, Deoghar, Jharkhand. I create simple, responsive, and visually appealing websites using HTML, CSS, and JavaScript. I enjoy turning ideas into clean and user-friendly web experiences for personal portfolios, small businesses, and creative projects. Currently, I am continuously improving my skills through practice, learning, and real-world projects to build better and more effective websites.`;
+      }
+    </script>
+  </head>
+  <body id="bdy">
+    <header id="header">
+      <div class="container">
+        <nav class="nav">
+          <a href="#" class="logo" id="logo">
+            SAGAR
+            <span class="point">.</span>
+          </a>
+
+          <div class="right-nav">
+            <ul class="nav-links">
+              <li>
+                <a href="#abt" class="nav-link" id="nav-linkss1">About</a>
+              </li>
+              <li>
+                <a href="#skill" class="nav-link" id="nav-linkss2">Skills</a>
+              </li>
+              <li>
+                <a href="#journey-head" class="nav-link" id="nav-linkss5"
+                  >Journey</a
+                >
+              </li>
+              <li><a href="#cnt" class="nav-link-btn">Let's Talk</a></li>
+              <li>
+                <a
+                  href="#"
+                  class="nav-link-dark-mode"
+                  id="dark"
+                  title="Night mode"
+                  onclick="night()"
+                  ><i class="fa-solid fa-moon"></i
+                ></a>
+                <a
+                  href="#"
+                  class="nav-link-dark-mode"
+                  id="day"
+                  title="Day mode"
+                  onclick="day()"
+                  ><i class="fa-solid fa-sun"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <section>
+      <div class="box">
+        <span class="top-text magictime puffIn" id="top">SAGAR VARMA</span>
+        <h1 class="words animate__animated animate__backInUp" id="abt">
+          <span class="word1" id="build">Building</span> <br />
+          <span class="word1" id="create">Creative</span> <br />
+          <span class="word1"
+            ><b id="digi">Digital</b><i class="exp">Experiences</i></span
+          >
+          <span class="point1">.</span> <br />
+        </h1>
+
+        <div class="left-box"></div>
+        <div class="right-box">
+          <img
+            src="image/sagar_img.jpg"
+            alt="sagar"
+            class="image magictime slideDownReturn"
+            id="image"
+            onmouseover="anm()"
+          />
+        </div>
+      </div>
+
+      <div class="intro" id="intro">
+        <p class="intro-text" id="intro-text">
+          Hi, I'm Sagar Varma, a Frontend Web Developer from Gopidih, Deoghar,
+          Jharkhand. I create simple, responsive, and visually appealing
+          websites using HTML, CSS, and JavaScript. I enjoy turning ideas into
+          clean and user-friendly web experiences for personal portfolios, small
+          businesses, and creative projects. Currently, I am continuously
+          improving my skills through practice, learning, and real-world
+          projects to build better and more effective websites.
+        </p>
+
+        <button class="translate" id="translate-hin" onclick="convert()">
+          Translate to Hindi
+        </button>
+        <button class="translate" id="translate-eng" onclick="convert1()">
+          Translate to English
+        </button>
+      </div>
+
+      <!--Contact button-->
+
+      <div class="contact-btn-box" id="contact-btn-box">
+        <button class="contact-btn animate__animated animate__pulse">
+          <a href="#cnt" class="cont-btnn" id="contact-btn"> Contact me </a>
+        </button>
+      </div>
+
+      <!--skills-->
+      <div class="section1" id="section-one">
+        <div class="skill-sect">
+          <p class="sub-skill" id="skill">My Skills</p>
+          <h2 class="skill-head" id="skill-head">Skills</h2>
+          <ul class="skill-list" id="skill-list">
+            <marquee
+              behavior="scroll"
+              scrollamount="7"
+              direction="left"
+              loop="-1"
+            >
+              <li class="skill-list-item1">
+                <i class="fas fa-circle circle"></i> HTML
+              </li>
+              <li class="skill-list-item1">
+                <i class="fas fa-circle circle"></i> CSS
+              </li>
+              <li class="skill-list-item1">
+                <i class="fas fa-circle circle"></i> JAVASCRIPT
+              </li>
+              <li class="skill-list-item1">
+                <i class="fas fa-circle circle"></i> RESPONSIVE DESIGN
+              </li>
+              <li class="skill-list-item1">
+                <i class="fas fa-circle circle"></i> UI/UX DESIGN
+              </li>
+
+              <!--repeat list items-->
+
+              <li class="skill-list-item1">
+                <i class="fas fa-circle circle"></i> HTML
+              </li>
+              <li class="skill-list-item1">
+                <i class="fas fa-circle circle"></i> CSS
+              </li>
+              <li class="skill-list-item1">
+                <i class="fas fa-circle circle"></i> JAVASCRIPT
+              </li>
+              <li class="skill-list-item1">
+                <i class="fas fa-circle circle"></i> RESPONSIVE DESIGN
+              </li>
+              <li class="skill-list-item1">
+                <i class="fas fa-circle circle"></i> UI/UX DESIGN
+              </li>
+
+              <li class="skill-list-item1">
+                <i class="fas fa-circle circle"></i> HTML
+              </li>
+              <li class="skill-list-item1">
+                <i class="fas fa-circle circle"></i> CSS
+              </li>
+              <li class="skill-list-item1">
+                <i class="fas fa-circle circle"></i> JAVASCRIPT
+              </li>
+              <li class="skill-list-item1">
+                <i class="fas fa-circle circle"></i> RESPONSIVE DESIGN
+              </li>
+              <li class="skill-list-item1">
+                <i class="fas fa-circle circle"></i> UI/UX DESIGN
+              </li>
+
+              <li class="skill-list-item1">
+                <i class="fas fa-circle circle"></i> HTML
+              </li>
+              <li class="skill-list-item1">
+                <i class="fas fa-circle circle"></i> CSS
+              </li>
+              <li class="skill-list-item1">
+                <i class="fas fa-circle circle"></i> JAVASCRIPT
+              </li>
+              <li class="skill-list-item1">
+                <i class="fas fa-circle circle"></i> RESPONSIVE DESIGN
+              </li>
+              <li class="skill-list-item1">
+                <i class="fas fa-circle circle"></i> UI/UX DESIGN
+              </li>
+
+              <li class="skill-list-item1">
+                <i class="fas fa-circle circle"></i> HTML
+              </li>
+              <li class="skill-list-item1">
+                <i class="fas fa-circle circle"></i> CSS
+              </li>
+              <li class="skill-list-item1">
+                <i class="fas fa-circle circle"></i> JAVASCRIPT
+              </li>
+              <li class="skill-list-item1">
+                <i class="fas fa-circle circle"></i> RESPONSIVE DESIGN
+              </li>
+              <li class="skill-list-item1">
+                <i class="fas fa-circle circle"></i> UI/UX DESIGN
+              </li>
+
+              <li class="skill-list-item1">
+                <i class="fas fa-circle circle"></i> HTML
+              </li>
+              <li class="skill-list-item1">
+                <i class="fas fa-circle circle"></i> CSS
+              </li>
+              <li class="skill-list-item1">
+                <i class="fas fa-circle circle"></i> JAVASCRIPT
+              </li>
+              <li class="skill-list-item1">
+                <i class="fas fa-circle circle"></i> RESPONSIVE DESIGN
+              </li>
+              <li class="skill-list-item1">
+                <i class="fas fa-circle circle"></i> UI/UX DESIGN
+              </li>
+
+              <li class="skill-list-item1">
+                <i class="fas fa-circle circle"></i> HTML
+              </li>
+              <li class="skill-list-item1">
+                <i class="fas fa-circle circle"></i> CSS
+              </li>
+              <li class="skill-list-item1">
+                <i class="fas fa-circle circle"></i> JAVASCRIPT
+              </li>
+              <li class="skill-list-item1">
+                <i class="fas fa-circle circle"></i> RESPONSIVE DESIGN
+              </li>
+              <li class="skill-list-item1">
+                <i class="fas fa-circle circle"></i> UI/UX DESIGN
+              </li>
+
+              <li class="skill-list-item1">
+                <i class="fas fa-circle circle"></i> HTML
+              </li>
+              <li class="skill-list-item1">
+                <i class="fas fa-circle circle"></i> CSS
+              </li>
+              <li class="skill-list-item1">
+                <i class="fas fa-circle circle"></i> JAVASCRIPT
+              </li>
+              <li class="skill-list-item1">
+                <i class="fas fa-circle circle"></i> RESPONSIVE DESIGN
+              </li>
+              <li class="skill-list-item1">
+                <i class="fas fa-circle circle"></i> UI/UX DESIGN
+              </li>
+
+              <li class="skill-list-item1">
+                <i class="fas fa-circle circle"></i> HTML
+              </li>
+              <li class="skill-list-item1">
+                <i class="fas fa-circle circle"></i> CSS
+              </li>
+              <li class="skill-list-item1">
+                <i class="fas fa-circle circle"></i> JAVASCRIPT
+              </li>
+              <li class="skill-list-item1">
+                <i class="fas fa-circle circle"></i> RESPONSIVE DESIGN
+              </li>
+              <li class="skill-list-item1">
+                <i class="fas fa-circle circle"></i> UI/UX DESIGN
+              </li>
+
+              <li class="skill-list-item1">
+                <i class="fas fa-circle circle"></i> HTML
+              </li>
+              <li class="skill-list-item1">
+                <i class="fas fa-circle circle"></i> CSS
+              </li>
+              <li class="skill-list-item1">
+                <i class="fas fa-circle circle"></i> JAVASCRIPT
+              </li>
+              <li class="skill-list-item1">
+                <i class="fas fa-circle circle"></i> RESPONSIVE DESIGN
+              </li>
+              <li class="skill-list-item1">
+                <i class="fas fa-circle circle"></i> UI/UX DESIGN
+              </li>
+
+              <li class="skill-list-item1">
+                <i class="fas fa-circle circle"></i> HTML
+              </li>
+              <li class="skill-list-item1">
+                <i class="fas fa-circle circle"></i> CSS
+              </li>
+              <li class="skill-list-item1">
+                <i class="fas fa-circle circle"></i> JAVASCRIPT
+              </li>
+              <li class="skill-list-item1">
+                <i class="fas fa-circle circle"></i> RESPONSIVE DESIGN
+              </li>
+              <li class="skill-list-item1">
+                <i class="fas fa-circle circle"></i> UI/UX DESIGN
+              </li>
+
+              <li class="skill-list-item1">
+                <i class="fas fa-circle circle"></i> HTML
+              </li>
+              <li class="skill-list-item1">
+                <i class="fas fa-circle circle"></i> CSS
+              </li>
+              <li class="skill-list-item1">
+                <i class="fas fa-circle circle"></i> JAVASCRIPT
+              </li>
+              <li class="skill-list-item1">
+                <i class="fas fa-circle circle"></i> RESPONSIVE DESIGN
+              </li>
+              <li class="skill-list-item1">
+                <i class="fas fa-circle circle"></i> UI/UX DESIGN
+              </li>
+
+              <li class="skill-list-item1">
+                <i class="fas fa-circle circle"></i> HTML
+              </li>
+              <li class="skill-list-item1">
+                <i class="fas fa-circle circle"></i> CSS
+              </li>
+              <li class="skill-list-item1">
+                <i class="fas fa-circle circle"></i> JAVASCRIPT
+              </li>
+              <li class="skill-list-item1">
+                <i class="fas fa-circle circle"></i> RESPONSIVE DESIGN
+              </li>
+              <li class="skill-list-item1">
+                <i class="fas fa-circle circle"></i> UI/UX DESIGN
+              </li>
+
+              <li class="skill-list-item1">
+                <i class="fas fa-circle circle"></i> HTML
+              </li>
+              <li class="skill-list-item1">
+                <i class="fas fa-circle circle"></i> CSS
+              </li>
+              <li class="skill-list-item1">
+                <i class="fas fa-circle circle"></i> JAVASCRIPT
+              </li>
+              <li class="skill-list-item1">
+                <i class="fas fa-circle circle"></i> RESPONSIVE DESIGN
+              </li>
+              <li class="skill-list-item1">
+                <i class="fas fa-circle circle"></i> UI/UX DESIGN
+              </li>
+
+              <li class="skill-list-item1">
+                <i class="fas fa-circle circle"></i> HTML
+              </li>
+              <li class="skill-list-item1">
+                <i class="fas fa-circle circle"></i> CSS
+              </li>
+              <li class="skill-list-item1">
+                <i class="fas fa-circle circle"></i> JAVASCRIPT
+              </li>
+              <li class="skill-list-item1">
+                <i class="fas fa-circle circle"></i> RESPONSIVE DESIGN
+              </li>
+              <li class="skill-list-item1">
+                <i class="fas fa-circle circle"></i> UI/UX DESIGN
+              </li>
+            </marquee>
+          </ul>
+        </div>
+      </div>
+
+      <!--Journey timeline -->
+
+      <div class="journey">
+        <p class="sub-journey">CAREER PATH</p>
+        <h1 class="journey-head" id="journey-head">The Journey</h1>
+        <p class="j-tag-line">Continuous learning and community impact.</p>
+      </div>
+      <div class="timeline time-ln">
+        <div class="dot">
+          <h4 class="year">2024-2027</h4>
+          <h2 class="course" id="course1">
+            Computer Engineering & Application
+          </h2>
+          <p class="dec">
+            Madhupur Polytechnic Pursuing<br />
+            a Diploma in Computer Engineering,<br />
+            where I am developing technical <br />
+            knowledge, problem-solving<br />
+            abilities, and practical <br />
+            skills in programming and <br />
+            web development.
+          </p>
+        </div>
+
+        <div class="dot">
+          <h4 class="year">2025</h4>
+          <h2 class="course" id="course2">Web Infrastructure</h2>
+          <p class="dec">
+            Learned HTML & CSS and built my first <br />
+            educational project, Python Notes Website.
+          </p>
+        </div>
+
+        <div class="dot">
+          <h4 class="year">2025</h4>
+          <h2 class="course" id="course3">Python notes Website</h2>
+          <p class="dec">
+            My first website built with HTML and CSS,<br />
+            designed to provide Python programming <br />
+            notes in a simple and organized format.<br />
+          </p>
+        </div>
+
+        <div class="dot">
+          <h4 class="year">2025</h4>
+          <h2 class="course" id="course4">Sagar Notes Point Website</h2>
+          <p class="dec">
+            Created Sagar Notes Point, a platform for <br />
+            Diploma 1st Semester Notes and PYQ Question
+          </p>
+        </div>
+
+        <div class="dot">
+          <h4 class="year">2025-2026</h4>
+          <h2 class="course" id="course5">Dreamers Library Website</h2>
+          <p class="dec">
+            Developed and independently manage <br />
+            Dreamers Library, an informational website <br />
+            focused on frontend design and user<br />
+            experience.
+          </p>
+        </div>
+
+        <div class="dot">
+          <h4 class="year">2026</h4>
+          <h2 class="course" id="course6">SagarTechLab Website</h2>
+          <p class="dec">
+            Built SagarTechLab, my first JavaScript-based <br />
+            project, and started exploring interactive web <br />
+            development.
+          </p>
+        </div>
+
+        <div class="dot">
+          <h4 class="year">Present</h4>
+          <h2 class="course" id="course7">Learning & Building Projects</h2>
+          <p class="dec">
+            Continuously learning, improving my frontend development skills, and
+            building modern <br />
+            responsive websites.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!--Developer-->
+    <footer id="footer">
+      <div class="contact_us" id="cnt">
+        <h1 class="contact_title" id="contact-title">Contact us</h1>
+
+        <address class="dev-name" id="dev-name">SAGAR</address>
+        <address class="contact_address">
+          Phone Number :
+          <a href="tel:+916207465071" class="footer-links"> +916207465071</a>
+        </address>
+        <address class="contact_address">
+          Email Id:
+          <a href="mailto:sagarkumarvarma2006@gmail.com" class="footer-links">
+            sagarkumarvarma2006@gmail.com</a
+          >
+        </address>
+        <address class="contact_address">
+          Address : Gopidih, Rohini, Deoghar , 814152 (jharkhand)
+        </address>
+      </div>
+
+      <div class="nav">
+        <h3 class="nav-top">Navigation</h3>
+        <ul class="nav-itemss">
+          <li><a href="#top" class="nav-itemss-link" id="home">Home</a></li>
+          <li>
+            <a href="#abt" class="nav-itemss-link" id="aboutus">About Me</a>
+          </li>
+          <li><a href="#skill" class="nav-itemss-link" id="skil">Skills</a></li>
+          <li>
+            <a href="#journey-head" class="nav-itemss-link" id="jrny"
+              >Journey</a
+            >
+          </li>
+          <li><a href="#cnt" class="nav-itemss-link" id="cont">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="developer" id="developer">
+        ©2026 Made with 💗 by Sagar Varma
+      </div>
+
+      <div class="social_pic">
+        <h1 class="contact_title" id="follow">Let's Connect</h1>
+
+        <a href="https://www.facebook.com/share/1APSbuWQTo/" target="_blank">
+          <i class="fa-brands fa-facebook social_logo"></i
+        ></a>
+        <a
+          href="https://www.instagram.com/sagartechlab?igsh=MWQzYzNxYmZlemU5Yg=="
+          target="_blank"
+        >
+          <i class="fa-brands fa-instagram social_logo"></i>
+        </a>
+        <a
+          href="https://wa.me/916207465071?text=Hello%20Sagar,%0A%20I%20visited%20your%20portfolio%20website%20and%20I'm%20interested%20in%20getting%20a%20website%20developed.%0A%20Could%20you%20please%20share%20more%20details%20about%20your%20services,%20pricing,%20and%20timeline?%0A%20
+
+Thank you.
+"
+          target="_blank"
+          ><i class="fa-brands fa-whatsapp social_logo"></i
+        ></a>
+      </div>
+    </footer>
+  </body>
+</html>
