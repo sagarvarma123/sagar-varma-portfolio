@@ -534,16 +534,22 @@ footer {
   color: blue;
 }
 
+
+
 /* End footer coding */
 
 /* start responsive design coding */
+/* mobile me responsive krne ke liye do chiz ka use kr sakte hai 1st: 600px
+or dusra 768px */
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
 
 body{
   overflow-x: hidden;
   overflow-y: scroll;
+  
 }
+
 
   header {
     width: 100%;
@@ -579,6 +585,10 @@ body{
     font-size: 18px;
     padding: 5px;
   }
+
+  /* <!-- New code yaha se start kr rhe hai  --> */
+
+  
 
   section {
     margin-top: -10px;
@@ -619,7 +629,7 @@ body{
     margin-top: 450px;
   }
 
- .intro {
+  .intro {
     width: 100%;
     height: auto;
     position: relative;
@@ -724,9 +734,6 @@ body{
     margin-top: 220px;
     font-size: 22px;
   }
-
-
-
 
 }
 
