@@ -29,9 +29,41 @@
     />
     <!--Script coding-->
     <script>
+
+      // cookie store code start
+
+      window.onload = function(){
+			if(document.cookie.indexOf("user") !=-1){
+				var data = document.cookie.split("=");
+				alert("Welcome Back "+data[1]+"\n Your Register Date & Time "+data[2]);
+			}
+			else{
+				var ab = window.prompt("What is your name ?*");
+				if(ab=="" || ab==null){
+
+					alert("Please Enter your name");
+					location.reload();
+				}
+				else{
+					var dt = new Date();
+				    var d = dt.toLocaleDateString();
+				    var t = dt.toLocaleTimeString();
+				
+				
+				   document.cookie = "user="+ab+"="+d+" "+t+";max-age=7200";
+				}
+				
+				
+
+			}
+		} 
+
+
+      // cookie store code end
       // alert
     console.log("👋 Welcome to Sagar Varma's Portfolio!");
     console.warn("⚠️ Please respect the author's work. Unauthorized copying is not permitted.");
+      
 
       function anm() {
         var a = document.getElementById("image");
