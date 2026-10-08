@@ -27,43 +27,61 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
+
+    <noscript>
+      <h1 class="js_block_alert">JavaScript is disabled in your browser. Please enable JavaScript to continue. </h1>
+
+      <style>
+        .js_block_alert{
+          text-align: center;
+          color: red;
+          font-family: Algerian;
+          margin-top: 280px;
+          font-size: 50px;
+          
+        }
+
+        .webpage-blocker{
+          display: none;
+        }
+      </style>
+    </noscript>
+
     <!--Script coding-->
     <script>
-
-      // cookie store code start
-
-      window.onload = function(){
-			if(document.cookie.indexOf("user") !=-1){
-				var data = document.cookie.split("=");
-				alert("Welcome Back "+data[1]+"\n Your Registered Date & Time "+data[2]);
-			}
-			else{
-				var ab = window.prompt("What is your name ?*");
-				if(ab=="" || ab==null){
-
-					alert("Please Enter your name");
-					location.reload();
-				}
-				else{
-					var dt = new Date();
-				    var d = dt.toLocaleDateString();
-				    var t = dt.toLocaleTimeString();
-				
-				
-				   document.cookie = "user="+ab+"="+d+" "+t+";max-age=5184000";
-				}
-				
-				
-
-			}
-		} 
-
-
-      // cookie store code end
       // alert
     console.log("👋 Welcome to Sagar Varma's Portfolio!");
     console.warn("⚠️ Please respect the author's work. Unauthorized copying is not permitted.");
-      
+
+    //cookie stote code start
+
+// window.onload = function(){
+// 			if(document.cookie.indexOf("user") !=-1){
+// 				var data = document.cookie.split("=");
+// 				alert("Welcome Back "+data[1]+"\n Your Register Date & Time "+data[2]);
+// 			}
+// 			else{
+// 				var ab = window.prompt("What is your name ?*");
+// 				if(ab=="" || ab==null){
+
+// 					alert("Please Enter your name");
+// 					location.reload();
+// 				}
+// 				else{
+// 					var dt = new Date();
+// 				    var d = dt.toLocaleDateString();
+// 				    var t = dt.toLocaleTimeString();
+				
+				
+// 				   document.cookie = "user="+ab+"="+d+" "+t+";max-age=7200";
+// 				}
+				
+				
+
+// 			}
+// 		} 
+
+//     // cookie store code end
 
       function anm() {
         var a = document.getElementById("image");
@@ -144,6 +162,7 @@
         document.getElementById("course5").style.color = "white";
         document.getElementById("course6").style.color = "white";
         document.getElementById("course7").style.color = "white";
+        document.getElementById("course8").style.color = "white";
 
         document.getElementById("journey-head").style.color = "white";
 
@@ -233,6 +252,7 @@
         document.getElementById("course5").style.color = "black";
         document.getElementById("course6").style.color = "black";
         document.getElementById("course7").style.color = "black";
+        document.getElementById("course8").style.color = "black";
 
         document.getElementById("journey-head").style.color = "black";
 
@@ -268,10 +288,18 @@
       function convert1() {
         document.getElementById("intro-text").innerHTML =
           `Hi, I'm Sagar Varma, a Frontend Web Developer from Gopidih, Deoghar, Jharkhand. I create simple, responsive, and visually appealing websites using HTML, CSS, and JavaScript. I enjoy turning ideas into clean and user-friendly web experiences for personal portfolios, small businesses, and creative projects. Currently, I am continuously improving my skills through practice, learning, and real-world projects to build better and more effective websites.`;
-      }
+    
+        }
+
+
     </script>
   </head>
   <body id="bdy">
+    <div id="net_notice">
+      No Internet Connection <i class="fas fa-solid fa-globe"></i>
+    </div>
+    
+    <div class="webpage-blocker" id="network_block">
     <header id="header">
       <div class="container">
         <nav class="nav">
@@ -333,7 +361,7 @@
         <div class="left-box"></div>
         <div class="right-box">
           <img
-            src="image/developer.jpg"
+            src="image/g.jpeg"
             alt="sagar"
             class="image magictime slideDownReturn"
             id="image"
@@ -672,9 +700,9 @@
 
         <div class="dot">
           <h4 class="year">2025</h4>
-          <h2 class="course" id="course4">Sagar Notes Point Website</h2>
+          <h2 class="course" id="course4">NoteLibrary Website</h2>
           <p class="dec">
-            Created Sagar Notes Point, a platform for <br />
+            Created NoteLibrary, a platform for <br />
             Diploma 1st Semester Notes and PYQ Question
           </p>
         </div>
@@ -700,6 +728,26 @@
           </p>
         </div>
 
+       <div class="dot">
+  <h4 class="year">2026</h4>
+  <h2 class="course" id="course7">SagarSpace Hub App</h2>
+  <p class="dec">
+    Developed SagarSpace Hub, a personal Android app <br />
+    project, and explored app development, user <br />
+    interfaces, and interactive features.
+  </p>
+</div>
+
+<div class="dot">
+  <h4 class="year">2026</h4>
+  <h2 class="course" id="course8">StoryBook App</h2>
+  <p class="dec">
+    Developed StoryBook, an interactive app where users <br />
+    can write, save, and manage their own stories, <br />
+    creating a personal digital story collection.
+  </p>
+</div>
+
         <div class="dot">
           <h4 class="year">Present</h4>
           <h2 class="course" id="course7">Learning & Building Projects</h2>
@@ -710,6 +758,64 @@
           </p>
         </div>
       </div>
+
+      <!-- Website Development Modal -->
+<div class="website-modal" id="websiteModal">
+    <div class="modal-box">
+
+        <button class="modal-close" onclick="closeWebsiteModal()">
+            &times;
+        </button>
+
+        <div class="modal-icon">
+            <i class="fa-solid fa-laptop-code"></i>
+        </div>
+
+        <h2>Want a Website?</h2>
+
+        <p>
+            Do you want to build a website for your
+            <strong>business, portfolio, shop or project?</strong>
+        </p>
+
+        <p class="modal-small">
+            Contact me and let's discuss your website idea.
+        </p>
+
+        <a href="tel:+916207465071" class="modal-call">
+            <i class="fa-solid fa-phone"></i>
+            +91 62074 65071
+        </a>
+
+        <a href="https://wa.me/916207465071?text=Hello%20Sagar,%20I%20want%20to%20build%20a%20website."
+           target="_blank"
+           class="modal-whatsapp">
+            <i class="fa-brands fa-whatsapp"></i>
+            Contact on WhatsApp
+        </a>
+
+    </div>
+</div>
+
+<script>
+function closeWebsiteModal() {
+    document.getElementById("websiteModal").style.display = "none";
+}
+
+/* Show modal after 3 seconds */
+setTimeout(function () {
+    document.getElementById("websiteModal").style.display = "flex";
+}, 3000);
+
+/* Close when clicking outside */
+document.getElementById("websiteModal").addEventListener("click", function(e) {
+    if (e.target === this) {
+        closeWebsiteModal();
+    }
+    
+});
+
+</script>
     </section>
 
     <!--Developer-->
@@ -776,5 +882,29 @@ Thank you.
         ></a>
       </div>
     </footer>
+    
+    </div>
+    <script>
+      // check internet connection
+
+      function checknetwork(){
+          if(navigator.onLine == true)
+        {
+          document.getElementById("net_notice").style.display = "none";
+          document.getElementById("network_block").style.display = "block";
+        }
+        else{
+          document.getElementById("net_notice").style.display = "block";
+          document.getElementById("network_block").style.display = "none";
+        }
+      }
+
+      setInterval(checknetwork,100);
+
+
+      
+</script>
+
+
   </body>
 </html>
